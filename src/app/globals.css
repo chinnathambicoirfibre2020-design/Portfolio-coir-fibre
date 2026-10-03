@@ -1,0 +1,246 @@
+@import "tailwindcss";
+
+@theme {
+  --color-latte-bg: #F5EBE1;
+  --color-latte-subtle: #EFE4D8;
+  --color-latte-surface: #FCF8F4;
+  --color-latte-warm: #EADBC8;
+
+  --color-espresso-darkest: #140A06;
+  --color-espresso-dark: #1F110B;
+  --color-espresso: #2C1810;
+  --color-espresso-light: #3D2318;
+  --color-espresso-border: #4A2D20;
+
+  --color-caramel: #C58940;
+  --color-caramel-light: #DF9B52;
+  --color-caramel-dark: #A36A28;
+
+  --color-ink: #22130C;
+  --color-ink-soft: #5C4638;
+  --color-muted-brown: #826E60;
+
+  --color-cream-white: #FFFDF9;
+  --color-cream-border: #E2D3C4;
+  --color-cream-divider: #D8C7B5;
+
+  --color-blue-strap: #2F6FB5;
+  --color-whatsapp-green: #25D366;
+
+  --font-heading: var(--font-bricolage), Georgia, serif;
+  --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+  --bg: #F5EBE1;
+  --bg-subtle: #EFE4D8;
+  --surface: #FCF8F4;
+  --surface-warm: #EADBC8;
+  --espresso-dark: #1F110B;
+  --espresso: #2C1810;
+  --espresso-light: #3D2318;
+  --espresso-border: #4A2D20;
+  --caramel: #C58940;
+  --caramel-light: #DF9B52;
+  --caramel-dark: #A36A28;
+  --ink: #22130C;
+  --ink-soft: #5C4638;
+  --muted: #826E60;
+  --cream-white: #FFFDF9;
+  --cream-border: #E2D3C4;
+  --cream-divider: #D8C7B5;
+  --blue-strap: #2F6FB5;
+  --whatsapp-green: #25D366;
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-jakarta), -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-bricolage), Georgia, serif;
+  letter-spacing: -0.015em;
+}
+
+/* Luxury Pill Button with circular disc arrow */
+.btn-pill-caramel {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #DF9B52 0%, #C58940 100%);
+  color: #1A0E08;
+  font-weight: 800;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  box-shadow: 0 6px 20px rgba(197, 137, 64, 0.35);
+  transition: all 0.28s var(--ease-spring);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-pill-caramel:hover {
+  background: linear-gradient(135deg, #E8A85F 0%, #D49449 100%);
+  box-shadow: 0 10px 30px rgba(197, 137, 64, 0.55);
+  transform: translateY(-2px);
+}
+
+.btn-pill-caramel .arrow-disc {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #1A0E08;
+  color: #DF9B52;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  transition: all 0.25s ease;
+}
+
+.btn-pill-caramel:hover .arrow-disc {
+  background: #FFFDF9;
+  color: #1A0E08;
+  transform: translateX(2px);
+}
+
+.btn-pill-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #FFFDF9;
+  color: #1A0E08;
+  font-weight: 800;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  box-shadow: 0 4px 16px rgba(34, 19, 12, 0.08);
+  border: 1px solid #E2D3C4;
+  transition: all 0.28s var(--ease-spring);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-pill-light:hover {
+  background: #F5EBE1;
+  border-color: #C58940;
+  box-shadow: 0 8px 24px rgba(197, 137, 64, 0.2);
+  transform: translateY(-2px);
+}
+
+.btn-pill-light .arrow-disc {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #1A0E08;
+  color: #FFFDF9;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  transition: all 0.25s ease;
+}
+
+.btn-pill-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #2C1810;
+  color: #FFFDF9;
+  font-weight: 800;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  box-shadow: 0 6px 20px rgba(15, 8, 5, 0.35);
+  border: 1px solid #4A2D20;
+  transition: all 0.28s var(--ease-spring);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-pill-dark:hover {
+  background: #3D2318;
+  border-color: #DF9B52;
+  box-shadow: 0 10px 28px rgba(15, 8, 5, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-pill-dark .arrow-disc {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #DF9B52;
+  color: #1A0E08;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  transition: all 0.25s ease;
+}
+
+.btn-pill-glass {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(255, 253, 249, 0.08);
+  color: #FFFDF9;
+  font-weight: 800;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  border: 1.5px solid rgba(197, 137, 64, 0.4);
+  backdrop-filter: blur(10px);
+  transition: all 0.28s var(--ease-spring);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-pill-glass:hover {
+  background: rgba(197, 137, 64, 0.18);
+  border-color: #DF9B52;
+  box-shadow: 0 8px 24px rgba(197, 137, 64, 0.25);
+  transform: translateY(-2px);
+}
+
+.btn-pill-glass .arrow-disc {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(197, 137, 64, 0.25);
+  color: #FFFDF9;
+  display: grid;
+  place-items: center;
+  font-size: 0.8rem;
+  transition: all 0.25s ease;
+}
+
+.btn-pill-glass:hover .arrow-disc {
+  background: #DF9B52;
+  color: #1A0E08;
+}
+
+/* Animations */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: floatSlow 4.5s ease-in-out infinite;
+}
+
+/* Print Optimization */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+  header, footer, .no-print, .btn-pill-caramel, .btn-pill-glass, .floating-whatsapp {
+    display: none !important;
+  }
+  .print-page-break {
+    page-break-before: always;
+  }
+}

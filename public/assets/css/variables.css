@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Design Tokens - Warm Espresso, Caramel & Latte Cream Theme
+   Inspired by Luxury Artisan Coffee & Natural Earth Aesthetics
+   ========================================================================== */
+
+:root {
+  /* Warm Latte & Espresso Palette */
+  --bg: #F5EBE1;             /* Warm creamy latte background */
+  --bg-subtle: #EFE4D8;      /* Slightly darker cream for section contrast */
+  --surface: #FCF8F4;        /* Soft milk foam white card surface */
+  --surface-warm: #EADBC8;   /* Warm caramel-beige card surface */
+  
+  --espresso-dark: #1F110B;  /* Deep rich espresso dark */
+  --espresso: #2C1810;       /* Rich chocolate/espresso brown */
+  --espresso-light: #3D2318; /* Medium roasted coffee brown */
+  --espresso-border: #4A2D20;
+  
+  --caramel: #C58940;        /* Golden warm caramel / amber */
+  --caramel-light: #DF9B52;  /* Light honey caramel */
+  --caramel-dark: #A36A28;   /* Deep caramel brown */
+  
+  --ink: #22130C;            /* Deep dark espresso text */
+  --ink-soft: #5C4638;       /* Medium warm text */
+  --muted: #826E60;          /* Muted warm beige text */
+  
+  --cream-white: #FFFDF9;    /* Pure warm white */
+  --cream-border: #E2D3C4;   /* Soft latte border */
+  --cream-divider: #D8C7B5;  /* Subtle vertical column line */
+  
+  --blue-strap: #2F6FB5;     /* Traditional coir binding strap blue */
+  --whatsapp-green: #25D366;
+  
+  /* Typography */
+  --font-heading: 'Bricolage Grotesque', 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Layout & Spacing */
+  --container-max: 1240px;
+  --header-height: 80px;
+  --radius-pill: 9999px;     /* Signature rounded pill buttons */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(34, 19, 12, 0.06);
+  --shadow-md: 0 8px 24px rgba(34, 19, 12, 0.09);
+  --shadow-lg: 0 16px 40px rgba(34, 19, 12, 0.14);
+  --shadow-espresso: 0 16px 36px rgba(15, 8, 5, 0.35);
+
+  /* Transitions */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.28s var(--ease-spring);
+}

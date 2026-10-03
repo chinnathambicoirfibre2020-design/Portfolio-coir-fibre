@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 44" height="44" width="240">
+  <g transform="translate(2, 4)">
+    <rect x="0" y="16" width="4.5" height="18" rx="1.5" fill="currentColor"/>
+    <rect x="8" y="9" width="4.5" height="25" rx="1.5" fill="currentColor"/>
+    <rect x="16" y="3" width="4.5" height="31" rx="1.5" fill="#D2A24A"/>
+    <rect x="24" y="11" width="4.5" height="23" rx="1.5" fill="currentColor"/>
+    <rect x="32" y="18" width="4.5" height="16" rx="1.5" fill="currentColor"/>
+  </g>
+  <text x="48" y="27" font-family="'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.5px" fill="currentColor">KANYA COIR</text>
+  <text x="49" y="38" font-family="'Source Sans 3', system-ui, sans-serif" font-size="9" font-weight="600" letter-spacing="1.5px" fill="#D2A24A">BRISTLE FIBRES</text>
+</svg>
