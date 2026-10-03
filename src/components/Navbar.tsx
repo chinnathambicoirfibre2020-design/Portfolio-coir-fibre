@@ -36,10 +36,10 @@ export default function Navbar() {
           <div className="flex items-center gap-4 text-neutral-300">
             <span className="hidden sm:inline">52kg - 56kg Manual Gunny Bales</span>
             <a
-              href="tel:+919994348574"
+              href="tel:+919487371259"
               className="font-bold text-[#DF9B52] hover:underline flex items-center gap-1"
             >
-              <Phone className="w-3 h-3" /> +91 99943 48574
+              <Phone className="w-3 h-3" /> +91 94873 71259
             </a>
           </div>
         </div>
@@ -92,7 +92,7 @@ export default function Navbar() {
           {/* Desktop CTAs */}
           <div className="hidden sm:flex items-center gap-3">
             <a
-              href="tel:+919994348574"
+              href="tel:+919487371259"
               className="flex items-center gap-2 text-xs font-bold text-[#2C1810] bg-white/75 backdrop-blur-md border border-white/90 px-4 py-2.5 rounded-full hover:bg-white shadow-[0_2px_8px_rgba(34,19,12,0.05)] hover:shadow-md transition-all"
             >
               <Phone className="w-3.5 h-3.5 text-[#C58940]" />
@@ -142,11 +142,11 @@ export default function Navbar() {
 
             <div className="flex flex-col gap-2 pt-3 border-t border-white/60">
               <a
-                href="tel:+919994348574"
+                href="tel:+919487371259"
                 className="flex items-center justify-center gap-2 text-sm font-bold text-[#1F110B] bg-white/85 backdrop-blur-md border border-white/90 py-3 rounded-full shadow-sm"
               >
                 <Phone className="w-4 h-4 text-[#C58940]" />
-                <span>Call +91 99943 48574</span>
+                <span>Call +91 94873 71259</span>
               </a>
               <Link
                 href="/contact"

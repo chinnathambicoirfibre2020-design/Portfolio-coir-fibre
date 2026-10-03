@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!form) return;
 
-  const SALES_EMAIL = 'sales@yourbrand.example';
-  const SALES_WHATSAPP_NUMBER = '910000000000'; // Replace with company WhatsApp number (Country code + phone without +)
+  const SALES_EMAIL = 'chinnathambicoir@gmail.com';
+  const SALES_WHATSAPP_NUMBER = '919487371259'; // CCF WhatsApp Helpline
 
   // Standard Email Form Submission
   form.addEventListener('submit', (e) => {

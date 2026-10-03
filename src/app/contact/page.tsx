@@ -46,8 +46,8 @@ export default function ContactPage() {
               <h3 className="font-bold text-espresso text-base">Direct Phone &amp; WhatsApp</h3>
               <p className="text-xs text-ink-soft">Direct line to our factory dispatch coordinators.</p>
               <div className="pt-2">
-                <a href="tel:+910000000000" className="text-sm font-bold text-caramel-dark hover:underline">
-                  +91 00000 00000
+                <a href="tel:+919487371259" className="text-sm font-bold text-caramel-dark hover:underline">
+                  +91 94873 71259
                 </a>
               </div>
             </div>
@@ -59,8 +59,8 @@ export default function ContactPage() {
               <h3 className="font-bold text-espresso text-base">Official Email Desk</h3>
               <p className="text-xs text-ink-soft">Send purchase orders, tender documents &amp; RFQs.</p>
               <div className="pt-2">
-                <a href="mailto:sales@yourbrand.example" className="text-sm font-bold text-caramel-dark hover:underline">
-                  sales@yourbrand.example
+                <a href="mailto:chinnathambicoir@gmail.com" className="text-sm font-bold text-caramel-dark hover:underline">
+                  chinnathambicoir@gmail.com
                 </a>
               </div>
             </div>

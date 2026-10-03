@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function WhatsAppFloating() {
   const whatsappUrl =
-    'https://wa.me/919994348574?text=Hello%20CCF%20Team%2C%20I%20am%20interested%20in%20Dyed%20Black%20Bristle%20Coir%20Fibre%20(52-56kg%20bales).%20Please%20share%20wholesale%20rates%20and%20delivery%20terms.';
+    'https://wa.me/919487371259?text=Hello%20CCF%20Team%2C%20I%20am%20interested%20in%20Dyed%20Black%20Bristle%20Coir%20Fibre%20(52-56kg%20bales).%20Please%20share%20wholesale%20rates%20and%20delivery%20terms.';
 
   return (
     <a

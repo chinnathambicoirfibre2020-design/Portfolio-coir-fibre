@@ -60,7 +60,7 @@ export default function RfqSection() {
       `*Phone:* ${encodeURIComponent(formData.phone || "N/A")}%0A` +
       `*Notes:* ${encodeURIComponent(formData.notes || "Please provide today's best wholesale quote and freight estimate.")}`;
 
-    window.open(`https://wa.me/910000000000?text=${message}`, "_blank");
+    window.open(`https://wa.me/919487371259?text=${message}`, "_blank");
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -76,7 +76,7 @@ export default function RfqSection() {
       const body = encodeURIComponent(
         `Booking Ref: ${ref}\nName: ${formData.name}\nCompany: ${formData.company}\nPhone: ${formData.phone}\nRequired Length: ${formData.length}\nQuantity: ${formData.quantity}\nState: ${formData.state}\nCity: ${formData.city}\nNotes: ${formData.notes}`
       );
-      window.location.href = `mailto:sales@yourbrand.example?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:chinnathambicoir@gmail.com?subject=${subject}&body=${body}`;
     }, 600);
   };
 
@@ -138,17 +138,17 @@ export default function RfqSection() {
             {/* Direct Contact links */}
             <div className="pt-4 flex flex-wrap gap-4 text-sm font-semibold">
               <a 
-                href="tel:+910000000000" 
+                href="tel:+919487371259" 
                 className="inline-flex items-center gap-2 text-caramel-light hover:text-caramel transition-colors"
               >
-                <Phone className="w-4 h-4" /> +91 00000 00000
+                <Phone className="w-4 h-4" /> +91 94873 71259
               </a>
               <span className="text-[#5C4638]">|</span>
               <a 
-                href="mailto:sales@yourbrand.example" 
+                href="mailto:chinnathambicoir@gmail.com" 
                 className="inline-flex items-center gap-2 text-caramel-light hover:text-caramel transition-colors"
               >
-                <Mail className="w-4 h-4" /> sales@yourbrand.example
+                <Mail className="w-4 h-4" /> chinnathambicoir@gmail.com
               </a>
             </div>
           </div>

@@ -309,7 +309,7 @@ function initWholesaleEstimator() {
 
       if (estWhatsappBtn) {
         const message = `Hello CCF Team, I would like a wholesale quote for ${tons} Ton${tons > 1 ? 's' : ''} (~${bales} Bales) of 8-12 inch Black Bristle Fibre.`;
-        estWhatsappBtn.href = `https://wa.me/910000000000?text=${encodeURIComponent(message)}`;
+        estWhatsappBtn.href = `https://wa.me/919487371259?text=${encodeURIComponent(message)}`;
       }
 
       if (qtyInput) {
