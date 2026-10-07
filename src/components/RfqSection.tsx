@@ -80,10 +80,13 @@ export default function RfqSection() {
   };
 
   return (
-    <section id="enquiry" className="scroll-mt-24 py-16 sm:py-20 bg-[#1B0E08] text-cream-white relative overflow-hidden">
-      <span id="booking" className="absolute -top-24" />
-      <span id="rfq" className="absolute -top-24" />
-      <span id="form" className="absolute -top-24" />
+    <section id="enquiry" className="scroll-mt-20 sm:scroll-mt-24 py-16 sm:py-20 bg-[#1B0E08] text-cream-white relative overflow-hidden">
+      <span id="booking" className="absolute -top-20 sm:-top-24" />
+      <span id="rfq" className="absolute -top-20 sm:-top-24" />
+      <span id="form" className="absolute -top-20 sm:-top-24" />
+      <span id="wholesale-quotation" className="absolute -top-20 sm:-top-24" />
+      <span id="quotation" className="absolute -top-20 sm:-top-24" />
+      <span id="quote" className="absolute -top-20 sm:-top-24" />
       {/* Subtle background glow */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-caramel/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-caramel-dark/15 rounded-full blur-3xl pointer-events-none" />
@@ -156,7 +159,7 @@ export default function RfqSection() {
           </div>
 
           {/* Right Column: Interactive Quotation Request Form Card */}
-          <div className="lg:col-span-7 bg-[#26150E] border border-[#4A2D20] rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl relative">
+          <div id="quotation-form" className="scroll-mt-24 lg:col-span-7 bg-[#26150E] border border-[#4A2D20] rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl relative">
             <div className="flex items-center justify-between pb-6 border-b border-[#3D2318] mb-6">
               <div>
                 <h3 className="text-2xl font-bold text-cream-white font-serif">Wholesale Quotation Request</h3>
