@@ -7,9 +7,9 @@ export default function RfqSection() {
   const [formData, setFormData] = useState({
     name: "",
     company: "",
-    length: '8" - 12" Standard Length (200-300mm) Commercial ⭐',
+    length: '8" - 12" Standard Commercial Length (200-300mm) ⭐',
     quantity: "",
-    state: "",
+    state: "India",
     city: "",
     phone: "",
     notes: ""
@@ -55,8 +55,7 @@ export default function RfqSection() {
       `*Company:* ${encodeURIComponent(formData.company || "N/A")}%0A` +
       `*Length/Grade:* ${encodeURIComponent(formData.length)}%0A` +
       `*Quantity:* ${encodeURIComponent(formData.quantity || "1 Truckload / 10 Tons")}%0A` +
-      `*State:* ${encodeURIComponent(formData.state || "India")}%0A` +
-      `*City:* ${encodeURIComponent(formData.city || "Direct Delivery")}%0A` +
+      `*City / Delivery Location:* ${encodeURIComponent(formData.city || "Direct Delivery")}%0A` +
       `*Phone:* ${encodeURIComponent(formData.phone || "N/A")}%0A` +
       `*Notes:* ${encodeURIComponent(formData.notes || "Please provide today's best wholesale quote and freight estimate.")}`;
 
@@ -74,7 +73,7 @@ export default function RfqSection() {
       // Create mailto fallback link
       const subject = encodeURIComponent(`CCF Wholesale Inquiry [Ref: ${ref}] - ${formData.company || formData.name}`);
       const body = encodeURIComponent(
-        `Booking Ref: ${ref}\nName: ${formData.name}\nCompany: ${formData.company}\nPhone: ${formData.phone}\nRequired Length: ${formData.length}\nQuantity: ${formData.quantity}\nState: ${formData.state}\nCity: ${formData.city}\nNotes: ${formData.notes}`
+        `Booking Ref: ${ref}\nName: ${formData.name}\nCompany: ${formData.company}\nPhone: ${formData.phone}\nRequired Length: ${formData.length}\nQuantity: ${formData.quantity}\nCity / Delivery Location: ${formData.city}\nNotes: ${formData.notes}`
       );
       window.location.href = `mailto:chinnathambicoir@gmail.com?subject=${subject}&body=${body}`;
     }, 600);
@@ -235,19 +234,19 @@ export default function RfqSection() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-[#D6C7BA] mb-2">
-                      Required Grade / Cut Length
+                    <label className="block text-xs font-bold uppercase tracking-wider text-[#D6C7BA] mb-2 flex items-center justify-between">
+                      <span>Required Grade / Cut Length</span>
+                      <span className="text-[#34D399] font-semibold text-[10px] bg-[#10B981]/15 px-2 py-0.5 rounded border border-[#10B981]/30">Standard Grade</span>
                     </label>
                     <select
                       name="length"
                       value={formData.length}
                       onChange={handleChange}
-                      className="w-full bg-[#1B0E08] border border-[#4A2D20] focus:border-caramel rounded-xl px-4 py-3 text-cream-white text-sm outline-none transition-all cursor-pointer"
+                      className="w-full bg-[#1B0E08] border border-[#4A2D20] focus:border-caramel rounded-xl px-4 py-3 text-[#DF9B52] text-sm outline-none transition-all font-bold cursor-pointer"
                     >
-                      <option value='8" - 12" Standard Length (200-300mm) Commercial ⭐'>8&quot; - 12&quot; Standard Commercial (200-300mm) ⭐</option>
-                      <option value="52kg - 56kg Manual Stitched Gunny Bales">52kg - 56kg Manual Stitched Gunny Bales</option>
-                      <option value="12 Inch Extra-Long Bristle Cut">12&quot; Extra-Long Bristle Cut</option>
-                      <option value="Custom Length On Bulk Order">Custom Length On Bulk Order</option>
+                      <option value='8" - 12" Standard Commercial Length (200-300mm) ⭐'>
+                        8&quot; - 12&quot; Standard Commercial (200-300mm) ⭐
+                      </option>
                     </select>
                   </div>
 
@@ -270,22 +269,7 @@ export default function RfqSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-[#D6C7BA] mb-2">
-                      Destination State in India *
-                    </label>
-                    <input
-                      type="text"
-                      name="state"
-                      required
-                      value={formData.state}
-                      onChange={handleChange}
-                      placeholder="e.g. Maharashtra, Gujarat, Delhi, UP"
-                      className="w-full bg-[#1B0E08] border border-[#4A2D20] focus:border-caramel rounded-xl px-4 py-3 text-cream-white placeholder-[#786456] text-sm outline-none transition-all"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider text-[#D6C7BA] mb-2">
-                      City / Delivery Godown *
+                      City / Delivery Location *
                     </label>
                     <input
                       type="text"
@@ -293,24 +277,25 @@ export default function RfqSection() {
                       required
                       value={formData.city}
                       onChange={handleChange}
-                      placeholder="e.g. Mumbai, Ahmedabad, Kanpur"
+                      placeholder="e.g. Mumbai, Ahmedabad, Kanpur, Pune"
                       className="w-full bg-[#1B0E08] border border-[#4A2D20] focus:border-caramel rounded-xl px-4 py-3 text-cream-white placeholder-[#786456] text-sm outline-none transition-all"
                     />
                   </div>
-                </div>
 
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-[#D6C7BA] mb-2">
-                    Phone / WhatsApp Number
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="e.g. +91 98765 43210"
-                    className="w-full bg-[#1B0E08] border border-[#4A2D20] focus:border-caramel rounded-xl px-4 py-3 text-cream-white placeholder-[#786456] text-sm outline-none transition-all"
-                  />
+                  <div>
+                    <label className="block text-xs font-bold uppercase tracking-wider text-[#D6C7BA] mb-2">
+                      Phone / WhatsApp Number *
+                    </label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      required
+                      value={formData.phone}
+                      onChange={handleChange}
+                      placeholder="e.g. +91 98765 43210"
+                      className="w-full bg-[#1B0E08] border border-[#4A2D20] focus:border-caramel rounded-xl px-4 py-3 text-cream-white placeholder-[#786456] text-sm outline-none transition-all"
+                    />
+                  </div>
                 </div>
 
                 {/* Form Buttons */}

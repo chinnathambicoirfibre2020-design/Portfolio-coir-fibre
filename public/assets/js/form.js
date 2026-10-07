@@ -52,8 +52,8 @@ function getFormDataObject(formData) {
     c: 'Company / Business',
     l: 'Cut Length',
     q: 'Quantity (Tons / Bales)',
-    state: 'State',
-    d: 'City / Delivery Station'
+    d: 'City / Delivery Location',
+    p: 'Phone / WhatsApp'
   };
 
   const obj = {};
@@ -61,7 +61,7 @@ function getFormDataObject(formData) {
     const label = labels[key] || key;
     obj[label] = value || 'Not specified';
   }
-  obj['State / City'] = `${obj['City / Delivery Station'] || ''}, ${obj['State'] || ''}`;
+  obj['Location'] = obj['City / Delivery Location'] || 'Direct Delivery';
   return obj;
 }
 
@@ -70,10 +70,10 @@ function formatEnquiryMessage(data) {
     `Name: ${data.Name || 'N/A'}`,
     `Business: ${data['Company / Business'] || 'N/A'}`,
     `Product: Premium Dyed Black Bristle Coir Fibre (35+ Years Experience)`,
-    `Grade / Length: ${data['Cut Length'] || 'N/A'}`,
+    `Grade / Length: ${data['Cut Length'] || '8" - 12" Standard Commercial Length (200-300mm) ⭐'}`,
     `Quantity: ${data['Quantity (Tons / Bales)'] || 'N/A'}`,
-    `Destination City: ${data['City / Delivery Station'] || 'N/A'}`,
-    `State: ${data.State || 'N/A'}`
+    `Destination / Delivery Location: ${data['City / Delivery Location'] || 'N/A'}`,
+    `Phone: ${data['Phone / WhatsApp'] || 'N/A'}`
   ].join('\n');
 }
 
