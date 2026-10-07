@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <>
       {/* Top Notification Bar (Frosted Dark Glass) */}
-      <div className="bg-[#190C07]/92 backdrop-blur-md text-[#EADBC8] text-xs py-2 px-4 border-b border-[#3D2318]/50 relative z-50">
+      <div className="bg-[#190C07]/92 backdrop-blur-md text-[#EADBC8] text-xs py-1.5 px-4 border-b border-[#3D2318]/50 relative z-50">
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1 font-semibold text-[#DF9B52]">
@@ -47,11 +47,11 @@ export default function Navbar() {
 
       {/* Main Glassmorphism Header */}
       <header className="sticky top-0 z-40 bg-[#FAF4EB]/70 backdrop-blur-2xl backdrop-saturate-150 border-b border-white/60 shadow-[inset_0_1px_1px_rgba(255,255,255,0.7),0_8px_32px_rgba(34,19,12,0.06)] transition-all">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
           
           {/* Glass Logo Badge */}
           <Link href="/" className="flex items-center gap-3 sm:gap-4 group">
-            <div className="relative w-13 h-13 sm:w-16 sm:h-16 rounded-2xl overflow-hidden shadow-lg border-2 border-white/80 bg-white/90 backdrop-blur-md flex-shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:border-[#C58940] group-hover:shadow-[0_8px_20px_rgba(197,137,64,0.25)]">
+            <div className="relative w-11 h-11 sm:w-13 sm:h-13 rounded-2xl overflow-hidden shadow-lg border-2 border-white/80 bg-white/90 backdrop-blur-md flex-shrink-0 transition-all duration-300 group-hover:scale-105 group-hover:border-[#C58940] group-hover:shadow-[0_8px_20px_rgba(197,137,64,0.25)]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/assets/images/CCF.jpg"
@@ -99,10 +99,10 @@ export default function Navbar() {
               <span>Call Factory</span>
             </a>
             <Link
-              href="/contact"
+              href="/#enquiry"
               className="btn-pill-caramel text-xs py-2.5 px-5 cursor-pointer shadow-md shadow-[#C58940]/25"
             >
-              <span>Get Quote</span>
+              <span>Book Now</span>
               <span className="arrow-disc">→</span>
             </Link>
           </div>
@@ -149,11 +149,11 @@ export default function Navbar() {
                 <span>Call +91 94873 71259</span>
               </a>
               <Link
-                href="/contact"
+                href="/#enquiry"
                 onClick={() => setMobileOpen(false)}
                 className="btn-pill-caramel w-full justify-center text-sm py-3"
               >
-                <span>Request Wholesale Price</span>
+                <span>Book Now / Get Quote</span>
                 <span className="arrow-disc">→</span>
               </Link>
             </div>

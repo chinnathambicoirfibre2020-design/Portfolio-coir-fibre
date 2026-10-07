@@ -81,7 +81,10 @@ export default function RfqSection() {
   };
 
   return (
-    <section id="enquiry" className="py-24 bg-[#1B0E08] text-cream-white relative overflow-hidden">
+    <section id="enquiry" className="scroll-mt-24 py-16 sm:py-20 bg-[#1B0E08] text-cream-white relative overflow-hidden">
+      <span id="booking" className="absolute -top-24" />
+      <span id="rfq" className="absolute -top-24" />
+      <span id="form" className="absolute -top-24" />
       {/* Subtle background glow */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-caramel/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-caramel-dark/15 rounded-full blur-3xl pointer-events-none" />

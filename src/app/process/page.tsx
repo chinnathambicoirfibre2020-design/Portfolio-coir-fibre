@@ -15,9 +15,9 @@ export default function ProcessPage() {
   return (
     <div className="flex flex-col w-full bg-[#F5EBE1]">
       {/* Page Hero */}
-      <section className="py-20 bg-gradient-to-b from-[#2C1810] to-[#1F110B] text-cream-white relative overflow-hidden">
+      <section className="pt-10 pb-14 sm:pt-12 sm:pb-16 bg-gradient-to-b from-[#2C1810] to-[#1F110B] text-cream-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-caramel/20 border border-caramel/40 text-caramel-light font-bold text-xs uppercase tracking-widest mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-caramel/20 border border-caramel/40 text-caramel-light font-bold text-xs uppercase tracking-widest mb-4">
             🏭 Factory Walkthrough &amp; Processing
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-cream-white tracking-tight leading-tight max-w-4xl mx-auto font-serif">
@@ -32,8 +32,8 @@ export default function ProcessPage() {
               <span>Explore 5-Step Process</span>
               <span className="arrow-disc">↓</span>
             </Link>
-            <Link href="/contact" className="btn-pill-caramel">
-              <span>Request Sample Hanks</span>
+            <Link href="/#enquiry" className="btn-pill-caramel">
+              <span>Book Now</span>
               <span className="arrow-disc">→</span>
             </Link>
           </div>

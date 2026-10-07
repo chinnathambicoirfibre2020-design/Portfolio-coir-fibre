@@ -2,17 +2,14 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ShieldCheck, Printer, Phone, Check } from 'lucide-react';
+import { useLightbox } from '@/context/LightboxContext';
+import { ShieldCheck, Phone, Check, ZoomIn, Ruler, Sparkles, CheckCircle2, Send } from 'lucide-react';
 
 export default function SpecificationSuite() {
-  const handlePrint = () => {
-    if (typeof window !== 'undefined') {
-      window.print();
-    }
-  };
+  const { openLightbox } = useLightbox();
 
   return (
-    <section id="blueprint" className="py-20 bg-[#140A06] text-[#F5EBE1] border-b border-[#3D2318] relative overflow-hidden">
+    <section id="blueprint" className="py-16 sm:py-20 bg-[#140A06] text-[#F5EBE1] border-b border-[#3D2318] relative overflow-hidden">
       {/* Background radial effects */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(ellipse_at_top,rgba(197,137,64,0.15),transparent_60%)] pointer-events-none" />
 
@@ -69,61 +66,166 @@ export default function SpecificationSuite() {
           </div>
 
           {/* Section 01: Product Details & Commercial Lengths */}
-          <div className="mb-12">
-            <div className="flex items-center gap-3 font-serif text-lg sm:text-xl font-bold text-[#FFFDF9] mb-5">
-              <span className="bg-[#C58940]/25 text-[#DF9B52] border border-[#C58940]/40 px-2.5 py-0.5 rounded-lg text-xs font-mono font-black">
-                01
-              </span>
-              <span>Product Details &amp; Commercial Lengths</span>
+          <div className="mb-14">
+            <div className="flex items-center justify-between flex-wrap gap-3 mb-6">
+              <div className="flex items-center gap-3 font-serif text-lg sm:text-xl font-bold text-[#FFFDF9]">
+                <span className="bg-[#C58940]/25 text-[#DF9B52] border border-[#C58940]/40 px-2.5 py-0.5 rounded-lg text-xs font-mono font-black">
+                  01
+                </span>
+                <span>Product Details &amp; Commercial Lengths</span>
+              </div>
+              <div className="inline-flex items-center gap-1.5 text-xs text-[#DF9B52] bg-[#C58940]/15 border border-[#C58940]/30 px-3 py-1 rounded-full">
+                <Ruler className="w-3.5 h-3.5" />
+                <span>Physical Measurement Benchmark Verified</span>
+              </div>
             </div>
 
-            <div className="overflow-x-auto rounded-2xl border border-[#C58940]/25 bg-[#100804]/70">
-              <table className="w-full min-w-[680px] text-left border-collapse text-xs sm:text-sm">
-                <thead>
-                  <tr className="bg-gradient-to-b from-[#26130B] to-[#1A0D07] text-[#DF9B52] uppercase tracking-wider text-[11px] font-bold border-b border-[#C58940]/30">
-                    <th className="py-4 px-5">Standard Length</th>
-                    <th className="py-4 px-5">Metric (cm)</th>
-                    <th className="py-4 px-5">Inches</th>
-                    <th className="py-4 px-5">Combing Method</th>
-                    <th className="py-4 px-5">Fibre Strength</th>
-                    <th className="py-4 px-5">Main Uses</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-[#C58940]/10 text-[#E2D3C4]">
-                  <tr className="hover:bg-[#C58940]/10 transition-colors">
-                    <td className="py-4 px-5">
-                      <span className="inline-block bg-[#C58940]/25 text-[#FFD49C] border border-[#C58940]/40 px-2.5 py-1 rounded-md font-black text-xs mr-2">
-                        8"-12"
+            {/* Visual Highlight Grid: Real Measurement Image + Technical Specs */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+              
+              {/* Highlighted Visual Standard Image Card */}
+              <div className="lg:col-span-5 flex flex-col">
+                <div
+                  onClick={() =>
+                    openLightbox(
+                      '/assets/images/bristle-lenght.jpg',
+                      'CCF Standard 8"-12" (200-300 mm / ~30 cm) Dyed Black Bristle Measurement Verification'
+                    )
+                  }
+                  className="group relative cursor-pointer overflow-hidden rounded-2xl border-2 border-[#C58940]/50 bg-[#100804] p-3.5 shadow-2xl transition-all duration-300 hover:border-[#DF9B52] hover:shadow-[0_20px_50px_rgba(197,137,64,0.35)] flex-1 flex flex-col justify-between"
+                >
+                  <div className="relative aspect-[4/3] sm:aspect-square w-full overflow-hidden rounded-xl bg-neutral-950">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/assets/images/bristle-lenght.jpg"
+                      alt="CCF 8 to 12 inch (30 cm) Dyed Black Bristle Length Measurement Standard"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+
+                    {/* Top Badges */}
+                    <div className="absolute top-3 left-3 bg-[#1A0D07]/90 backdrop-blur-md text-[#DF9B52] font-black text-[11px] px-3 py-1 rounded-full uppercase tracking-wider shadow-lg flex items-center gap-1.5 border border-[#C58940]/40">
+                      <Ruler className="w-3.5 h-3.5 text-[#DF9B52]" />
+                      <span>Scale Benchmark</span>
+                    </div>
+
+                    <div className="absolute top-3 right-3 bg-black/75 backdrop-blur-md text-[#34D399] font-bold text-[11px] px-2.5 py-1 rounded-full border border-[#34D399]/40 flex items-center gap-1.5 shadow-md">
+                      <span className="w-2 h-2 rounded-full bg-[#34D399] animate-pulse" />
+                      <span>~12&quot; (~30 cm)</span>
+                    </div>
+
+                    {/* Bottom Zoom Callout */}
+                    <div className="absolute bottom-3 right-3 flex items-center gap-1.5 rounded-full bg-black/85 px-3.5 py-1.5 text-xs font-bold text-white backdrop-blur-md border border-white/20 transition-transform group-hover:scale-105 shadow-xl">
+                      <ZoomIn className="w-3.5 h-3.5 text-[#DF9B52]" />
+                      <span>Click to Inspect Scale</span>
+                    </div>
+                  </div>
+
+                  {/* Caption & Visual Verification Note */}
+                  <div className="pt-4 px-1 text-left">
+                    <div className="flex items-center justify-between text-xs mb-1.5">
+                      <span className="text-[#DF9B52] font-bold uppercase tracking-wider text-[11px] flex items-center gap-1">
+                        <Sparkles className="w-3.5 h-3.5" />
+                        <span>Actual Factory Measurement</span>
                       </span>
-                      <strong className="text-white">Standard Length ⭐</strong>
-                    </td>
-                    <td className="py-4 px-5 font-bold text-white">20.0 - 30.0 cm</td>
-                    <td className="py-4 px-5">8.0 - 12.0 in</td>
-                    <td className="py-4 px-5">Steel Pin Combed &amp; Dust-Free</td>
-                    <td className="py-4 px-5 text-[#34D399] font-semibold">
-                      High Stiffness &amp; Bounce
-                    </td>
-                    <td className="py-4 px-5 text-xs">
-                      Cleaning brooms, road sweepers, industrial roller brushes, deck scrubbers &amp; coir twine
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-[#C58940]/10 transition-colors">
-                    <td className="py-4 px-5">
-                      <span className="inline-block bg-[#2F6FB5]/25 text-[#93C5FD] border border-[#2F6FB5]/40 px-2.5 py-1 rounded-md font-black text-xs mr-2">
-                        CUSTOM
+                      <span className="text-[#34D399] text-[11px] font-mono font-semibold bg-[#10B981]/15 px-2 py-0.5 rounded border border-[#10B981]/30">
+                        Tolerance: ±10 mm
                       </span>
-                      <strong className="text-white">Custom Cut (On Order)</strong>
-                    </td>
-                    <td className="py-4 px-5">Per Order (Custom)</td>
-                    <td className="py-4 px-5">Per Order</td>
-                    <td className="py-4 px-5">Custom Specified Combing</td>
-                    <td className="py-4 px-5 text-neutral-300">Custom Specification</td>
-                    <td className="py-4 px-5 text-xs">
-                      Special brush machines &amp; custom broom manufacturing
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    </div>
+                    <p className="text-xs text-[#EADBC8] leading-relaxed">
+                      Physical wooden scale calibration photo demonstrating CCF combed black bristle hanks reaching standard <strong>8&quot; - 12&quot; (~30 cm)</strong> height, strapped securely with blue bands for high-speed automated tufting.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Technical Specifications Table & Feature Highlights */}
+              <div className="lg:col-span-7 flex flex-col justify-between space-y-4">
+                <div className="overflow-x-auto rounded-2xl border border-[#C58940]/25 bg-[#100804]/70">
+                  <table className="w-full text-left border-collapse text-xs sm:text-sm">
+                    <thead>
+                      <tr className="bg-gradient-to-b from-[#26130B] to-[#1A0D07] text-[#DF9B52] uppercase tracking-wider text-[11px] font-bold border-b border-[#C58940]/30">
+                        <th className="py-3.5 px-4">Standard Length</th>
+                        <th className="py-3.5 px-4">Metric (cm)</th>
+                        <th className="py-3.5 px-4">Inches</th>
+                        <th className="py-3.5 px-4">Combing &amp; Finish</th>
+                        <th className="py-3.5 px-4">Strength &amp; Uses</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-[#C58940]/10 text-[#E2D3C4]">
+                      <tr className="hover:bg-[#C58940]/10 transition-colors">
+                        <td className="py-3.5 px-4">
+                          <span className="inline-block bg-[#C58940]/25 text-[#FFD49C] border border-[#C58940]/40 px-2 py-0.5 rounded font-black text-xs mr-1.5">
+                            8&quot;-12&quot;
+                          </span>
+                          <strong className="text-white block sm:inline">Standard Length ⭐</strong>
+                        </td>
+                        <td className="py-3.5 px-4 font-bold text-white whitespace-nowrap">20.0 - 30.0 cm</td>
+                        <td className="py-3.5 px-4 whitespace-nowrap">8.0 - 12.0 in</td>
+                        <td className="py-3.5 px-4">
+                          <span className="text-[#34D399] font-medium">Steel-Pin Combed</span>
+                          <span className="block text-[11px] text-[#A8988B]">Dust-extracted &amp; straight</span>
+                        </td>
+                        <td className="py-3.5 px-4 text-xs">
+                          <strong className="text-white">High Spring &amp; Bounce</strong>
+                          <span className="block text-[11px] text-[#A8988B]">Floor brooms, road sweepers, industrial roller brushes</span>
+                        </td>
+                      </tr>
+                      <tr className="hover:bg-[#C58940]/10 transition-colors">
+                        <td className="py-3.5 px-4">
+                          <span className="inline-block bg-[#2F6FB5]/25 text-[#93C5FD] border border-[#2F6FB5]/40 px-2 py-0.5 rounded font-black text-xs mr-1.5">
+                            CUSTOM
+                          </span>
+                          <strong className="text-white block sm:inline">Custom Cut</strong>
+                        </td>
+                        <td className="py-3.5 px-4 whitespace-nowrap">Per Order</td>
+                        <td className="py-3.5 px-4 whitespace-nowrap">Per Order</td>
+                        <td className="py-3.5 px-4">
+                          <span className="text-neutral-300">Tailored Combing</span>
+                          <span className="block text-[11px] text-[#A8988B]">Custom specified density</span>
+                        </td>
+                        <td className="py-3.5 px-4 text-xs">
+                          <strong className="text-white">Specialized Machinery</strong>
+                          <span className="block text-[11px] text-[#A8988B]">Dedicated brush machines &amp; custom tufting heads</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                {/* 3 Quick Verification Cards */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="bg-[#180C08] border border-[#C58940]/25 rounded-xl p-3.5 text-left">
+                    <div className="flex items-center gap-2 text-xs font-bold text-[#DF9B52] mb-1">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#34D399]" />
+                      <span>Uniform Length Reach</span>
+                    </div>
+                    <p className="text-[11px] text-[#BCAAA4] leading-relaxed">
+                      Rigorous hand-hackling removes short curly coir, giving 90%+ uniform 20–30 cm length.
+                    </p>
+                  </div>
+
+                  <div className="bg-[#180C08] border border-[#C58940]/25 rounded-xl p-3.5 text-left">
+                    <div className="flex items-center gap-2 text-xs font-bold text-[#DF9B52] mb-1">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#34D399]" />
+                      <span>Elastic Spring Retention</span>
+                    </div>
+                    <p className="text-[11px] text-[#BCAAA4] leading-relaxed">
+                      Zero hydraulic crush maintains full fiber memory and rigid bouncing strength.
+                    </p>
+                  </div>
+
+                  <div className="bg-[#180C08] border border-[#C58940]/25 rounded-xl p-3.5 text-left">
+                    <div className="flex items-center gap-2 text-xs font-bold text-[#DF9B52] mb-1">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#34D399]" />
+                      <span>Machine-Ready Bundling</span>
+                    </div>
+                    <p className="text-[11px] text-[#BCAAA4] leading-relaxed">
+                      Strapped in compact hanks with durable bands for smooth tufting feeder operation.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
 
@@ -240,15 +342,15 @@ export default function SpecificationSuite() {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-4 border-t border-white/10">
-            <button onClick={handlePrint} className="btn-pill-caramel">
-              <Printer className="w-4 h-4" />
-              <span>Print / Save Product Data Sheet</span>
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-6 border-t border-white/10">
+            <Link href="/contact" className="btn-pill-caramel">
+              <Phone className="w-4 h-4" />
+              <span>Contact Sales Desk</span>
               <span className="arrow-disc">→</span>
-            </button>
-            <Link href="/contact" className="btn-pill-glass">
-              <Phone className="w-4 h-4 text-[#DF9B52]" />
-              <span>Contact Our Sales Desk</span>
+            </Link>
+            <Link href="/#enquiry" className="btn-pill-glass">
+              <Send className="w-4 h-4 text-[#DF9B52]" />
+              <span>Request Wholesale Price Quote</span>
               <span className="arrow-disc">→</span>
             </Link>
           </div>

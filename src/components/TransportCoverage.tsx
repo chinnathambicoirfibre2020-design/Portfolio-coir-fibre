@@ -33,11 +33,11 @@ export default function TransportCoverage() {
   ];
 
   return (
-    <section id="all-india" className="py-20 bg-[#1F110B] text-[#FFFDF9] border-b border-[#3D2318]">
+    <section id="all-india" className="py-16 sm:py-20 bg-[#1F110B] text-[#FFFDF9] border-b border-[#3D2318]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 bg-[#C58940]/20 border border-[#C58940] px-4 py-1.5 rounded-full text-xs font-bold text-[#DF9B52] mb-3">
             <Truck className="w-3.5 h-3.5" />
             <span>Pan-India Logistics &amp; Transport Network</span>

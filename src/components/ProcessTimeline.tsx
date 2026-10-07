@@ -40,11 +40,11 @@ export default function ProcessTimeline() {
   ];
 
   return (
-    <section className="py-20 bg-[#FAF4EB] text-[#22130C] border-b border-[#E2D3C4]">
+    <section className="py-16 sm:py-20 bg-[#FAF4EB] text-[#22130C] border-b border-[#E2D3C4]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 bg-[#C58940]/20 border border-[#C58940] px-4 py-1.5 rounded-full text-xs font-bold text-[#A36A28] mb-3">
             <Factory className="w-3.5 h-3.5" />
             <span>Artisan Precision • Direct Factory Facility</span>
@@ -53,7 +53,7 @@ export default function ProcessTimeline() {
             How We Process Our Black Bristle Fibre
           </h2>
           <p className="text-base sm:text-lg text-[#5C4638] mt-3 leading-relaxed">
-            Our 4-step production cycle guarantees uniform 8"-12" length, deep non-fading black dye, and undamaged fibre springiness.
+            Our 4-step production cycle guarantees uniform 8&quot;-12&quot; length, deep non-fading black dye, and undamaged fibre springiness.
           </p>
         </div>
 

@@ -73,11 +73,11 @@ export default function FactoryGallery() {
       : photos.filter((p) => p.category === activeFilter);
 
   return (
-    <section id="factory-photos" className="py-20 bg-[#FAF4EB] text-[#22130C] border-b border-[#E2D3C4]">
+    <section id="factory-photos" className="py-16 sm:py-20 bg-[#FAF4EB] text-[#22130C] border-b border-[#E2D3C4]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="text-center max-w-3xl mx-auto mb-10">
           <div className="inline-flex items-center gap-2 bg-[#C58940]/20 border border-[#C58940] px-4 py-1.5 rounded-full text-xs font-bold text-[#A36A28] mb-3">
             <Camera className="w-3.5 h-3.5" />
             <span>100% Real Production Footage</span>

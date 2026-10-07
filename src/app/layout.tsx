@@ -22,6 +22,7 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://chinnathambicoirfibre.com'),
   title: "CCF | Chinnathambi Coir Fibre - 35+ Years Field Experience",
   description: "Chinnathambi Coir Fibre (CCF) - 35+ Years of Coir Field Experience. Modern Direct Processor in Kanyakumari. Premium Dyed Black Bristle Coir Fibre in Standard Commercial Length 8\" - 12\" (200 - 300 mm) for Wholesale Supply across India.",
   keywords: [

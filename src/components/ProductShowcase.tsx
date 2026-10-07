@@ -29,11 +29,11 @@ export default function ProductShowcase() {
   ];
 
   return (
-    <section id="grades" className="py-20 bg-[#FAF4EB] text-[#22130C] border-b border-[#E2D3C4]">
+    <section id="grades" className="pt-16 pb-20 sm:pt-20 sm:pb-24 bg-[#FAF4EB] text-[#22130C] border-b border-[#E2D3C4]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 bg-[#C58940]/20 border border-[#C58940] px-4 py-1.5 rounded-full text-xs font-bold text-[#A36A28] mb-3">
             <Package className="w-3.5 h-3.5" />
             <span>Primary Commercial Fibre Standard</span>
@@ -47,7 +47,7 @@ export default function ProductShowcase() {
         </div>
 
         {/* Featured Commercial Standard Card */}
-        <div className="bg-[#2C1810] text-[#FFFDF9] rounded-3xl p-6 sm:p-10 border-2 border-[#C58940]/40 shadow-2xl relative overflow-hidden mb-16">
+        <div className="bg-[#2C1810] text-[#FFFDF9] rounded-3xl p-6 sm:p-10 border-2 border-[#C58940]/40 shadow-2xl relative overflow-hidden mb-14">
           <div className="absolute top-4 right-4 bg-gradient-to-r from-[#DF9B52] to-[#C58940] text-[#1A0E08] text-xs font-black px-4 py-1.5 rounded-full shadow-md">
             ⭐ Commercial Bristle Standard
           </div>
@@ -147,10 +147,10 @@ export default function ProductShowcase() {
 
               <div className="pt-6">
                 <Link
-                  href="/contact"
+                  href="/#enquiry"
                   className="btn-pill-caramel w-full text-center text-sm font-black"
                 >
-                  <span>Request 8&quot;-12&quot; Standard Price</span>
+                  <span>Book Now (8&quot;-12&quot; Standard)</span>
                   <span className="arrow-disc">→</span>
                 </Link>
               </div>

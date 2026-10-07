@@ -9,7 +9,7 @@ export default function Hero() {
   const { openLightbox } = useLightbox();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF4EB] via-[#F5EBE1] to-[#EFE4D8] text-[#22130C] py-16 lg:py-24 border-b border-[#E2D3C4]">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF4EB] via-[#F5EBE1] to-[#EFE4D8] text-[#22130C] pt-6 pb-12 sm:pt-8 sm:pb-16 lg:pt-10 lg:pb-20 border-b border-[#E2D3C4]">
       {/* Soft warm radial ambient glows */}
       <div className="absolute top-0 right-1/4 w-[32rem] h-[32rem] bg-[#C58940]/15 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-10 w-80 h-80 bg-[#DF9B52]/10 rounded-full blur-2xl pointer-events-none" />
@@ -38,8 +38,8 @@ export default function Hero() {
                 <span>View Products</span>
                 <span className="arrow-disc">→</span>
               </Link>
-              <Link href="/contact" className="btn-pill-caramel">
-                <span>Get Wholesale Price</span>
+              <Link href="/#enquiry" className="btn-pill-caramel">
+                <span>Book Now</span>
                 <span className="arrow-disc">→</span>
               </Link>
             </div>
