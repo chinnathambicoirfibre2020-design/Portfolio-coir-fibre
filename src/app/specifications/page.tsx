@@ -5,8 +5,20 @@ import { ShieldCheck, CheckCircle2, Sliders, Cpu, Wrench } from "lucide-react";
 import SpecificationSuite from "@/components/SpecificationSuite";
 
 export const metadata: Metadata = {
-  title: "Technical Specifications & QC Standards | CCF",
-  description: "Official technical data sheet for Chinnathambi Coir Fibre dyed black bristle coir. Length tolerances, moisture limits (<15%), purity (>97%), manual 52-56kg gunny baling.",
+  title: "QC Technical Specifications & Testing | Fibre Manufacturer",
+  description: "Official factory technical data sheet for Chinnathambi Coir Fibre. Length tolerances (8\"-12\"), moisture limits (<15%), purity (>97%), tensile strength, and 52-56kg manual gunny baling standards.",
+  keywords: [
+    "Manufacturer",
+    "Fabric product manufacturer",
+    "Fibre product manufacturer",
+    "Coir fibre technical specifications",
+    "Bristle fibre physical properties",
+    "Dyed black coir moisture testing",
+    "Coir quality control standards India"
+  ],
+  alternates: {
+    canonical: "/specifications",
+  },
 };
 
 export default function SpecificationsPage() {

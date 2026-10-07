@@ -6,8 +6,20 @@ import RfqSection from "@/components/RfqSection";
 import TransportCoverage from "@/components/TransportCoverage";
 
 export const metadata: Metadata = {
-  title: "Contact Factory Sales Desk & Wholesale RFQ | CCF",
-  description: "Contact Chinnathambi Coir Fibre (CCF) sales team for direct factory wholesale rates, 8\"-12\" standard cut black bristle coir, sample hanks, and Pan-India freight quotes.",
+  title: "Contact Factory Sales | Direct Coir Fibre Manufacturer Wholesale Quotes",
+  description: "Contact Chinnathambi Coir Fibre sales desk for direct factory wholesale rates, bulk supply orders, sample hanks, and Pan-India freight dispatch for 8\"-12\" black bristle coir fibre.",
+  keywords: [
+    "Manufacturer",
+    "Fabric product manufacturer",
+    "Fibre product manufacturer",
+    "Coir manufacturer contact",
+    "Wholesale coir fibre price quote",
+    "Direct factory supplier contact India",
+    "B2B coir fibre bulk order"
+  ],
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {

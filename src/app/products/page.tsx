@@ -6,8 +6,21 @@ import ProductShowcase from "@/components/ProductShowcase";
 import AnatomySection from "@/components/AnatomySection";
 
 export const metadata: Metadata = {
-  title: "Commercial Standard Length Products (8\"-12\") | CCF",
-  description: "Explore Chinnathambi Coir Fibre standard commercial 8\"-12\" (200-300mm) dyed black bristle coir fibre. Manual 52kg-56kg stitched gunny bale packaging.",
+  title: "Black Bristle Coir & Fibre Product Manufacturer (8\"-12\")",
+  description: "Direct Manufacturer of Standard Commercial 8\"-12\" (200-300mm) Dyed Black Bristle Coir Fibre. Combed natural fibre product, 52-56kg manual gunny bales for industrial brush and broom manufacturing.",
+  keywords: [
+    "Manufacturer",
+    "Fabric product manufacturer",
+    "Fibre product manufacturer",
+    "Black bristle coir manufacturer",
+    "Dyed coir fibre manufacturer",
+    "Brush fibre product manufacturer",
+    "Broom raw material factory",
+    "8 to 12 inch coir fibre"
+  ],
+  alternates: {
+    canonical: "/products",
+  },
 };
 
 export default function ProductsPage() {

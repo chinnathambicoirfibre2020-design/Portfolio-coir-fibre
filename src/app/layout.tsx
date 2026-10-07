@@ -23,38 +23,195 @@ const bricolageGrotesque = Bricolage_Grotesque({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://chinnathambicoirfibre.com'),
-  title: "CCF | Chinnathambi Coir Fibre - 35+ Years Field Experience",
-  description: "Chinnathambi Coir Fibre (CCF) - 35+ Years of Coir Field Experience. Modern Direct Processor in Kanyakumari. Premium Dyed Black Bristle Coir Fibre in Standard Commercial Length 8\" - 12\" (200 - 300 mm) for Wholesale Supply across India.",
+  title: {
+    default: "Chinnathambi Coir Fibre (CCF) | Coir Fibre & Natural Fibre Product Manufacturer India",
+    template: "%s | Chinnathambi Coir Fibre Manufacturer",
+  },
+  description: "Chinnathambi Coir Fibre (CCF) - 35+ Years of Industry Experience. Direct Manufacturer & Processor of Premium Dyed Black Bristle Coir Fibre in Standard Commercial Length 8\"-12\" (200-300mm). 52-56kg Manual Gunny Bales for Wholesale Brush & Broom Manufacturers across India.",
   keywords: [
+    "Manufacturer",
+    "Fabric product manufacturer",
+    "Fibre product manufacturer",
+    "Coir fibre manufacturer",
+    "Black coir fibre manufacturer",
+    "Bristle fibre manufacturer",
+    "Natural coir fibre manufacturer India",
+    "Dyed black bristle fibre factory",
     "Chinnathambi Coir Fibre",
-    "CCF",
-    "35 years field experience",
-    "bristle fibre black manufacturer",
-    "black coir fibre",
-    "standard length coir",
-    "8-12 inch coir",
-    "Kanyakumari coir",
-    "brush fibre India",
-    "coir exporter Tamil Nadu",
-    "broom fibre wholesale"
+    "CCF Kanyakumari",
+    "Industrial brush raw material manufacturer",
+    "Broom fibre manufacturer India",
+    "Coconut husk fibre processing factory",
+    "Standard length coir 8-12 inch",
+    "200-300mm black bristle coir",
+    "Coir manufacturer Tamil Nadu",
+    "Manual gunny bale coir 52-56kg",
+    "B2B coir wholesale supplier India"
   ],
+  authors: [{ name: "Chinnathambi Coir Fibre" }],
+  creator: "Chinnathambi Coir Fibre",
+  publisher: "Chinnathambi Coir Fibre",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: "/assets/images/CCF.jpg",
+    apple: "/assets/images/CCF.jpg",
   },
   openGraph: {
-    title: "Chinnathambi Coir Fibre (CCF) - Kanyakumari Dyed Black Bristle Coir",
-    description: "35+ Years Coir Field Experience. Direct factory production of dyed black coconut bristle fibre in 8\"-12\" standard lengths, 52-56kg manual gunny bales, all-India wholesale dispatch.",
+    title: "Chinnathambi Coir Fibre (CCF) | Coir & Natural Fibre Product Manufacturer",
+    description: "35+ Years Coir Field Experience. Leading direct manufacturer of dyed black coconut bristle fibre in 8\"-12\" (200-300mm) commercial length. Manual 52-56kg gunny bales, direct factory truck dispatch across India.",
+    url: "https://chinnathambicoirfibre.com",
+    siteName: "Chinnathambi Coir Fibre (CCF)",
     images: [
       {
         url: "/assets/images/hero-section.jpg",
         width: 1200,
         height: 630,
-        alt: "CCF Black Bristle Coir Fibre",
+        alt: "Chinnathambi Coir Fibre - Black Bristle Coir Product Manufacturer",
+      },
+      {
+        url: "/assets/images/CCF.jpg",
+        width: 800,
+        height: 800,
+        alt: "Chinnathambi Coir Fibre Factory Logo",
       }
     ],
     locale: "en_IN",
     type: "website",
-  }
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chinnathambi Coir Fibre (CCF) | Coir Fibre Manufacturer",
+    description: "Direct Manufacturer of Dyed Black Bristle Coir Fibre (8\"-12\" / 200-300mm). 35+ Years Experience in Kanyakumari. 52-56kg Gunny Bales, All-India Wholesale Supply.",
+    images: ["/assets/images/hero-section.jpg"],
+  },
+  category: "Manufacturing & Industrial Supply",
+};
+
+const jsonLdSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "Manufacturer", "LocalBusiness"],
+      "@id": "https://chinnathambicoirfibre.com/#organization",
+      "name": "Chinnathambi Coir Fibre",
+      "alternateName": [
+        "CCF",
+        "CCF Coir Manufacturer",
+        "Chinnathambi Coir Fibre Manufacturer",
+        "Chinnathambi Fibre Product Manufacturer",
+        "Chinnathambi Coir Factory Kanyakumari"
+      ],
+      "url": "https://chinnathambicoirfibre.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://chinnathambicoirfibre.com/assets/images/CCF.jpg",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://chinnathambicoirfibre.com/assets/images/hero-section.jpg",
+      "description": "Premier manufacturer and direct processor of dyed black coconut bristle coir fibre and natural fibre products in standard commercial length 8\" - 12\" (200 - 300 mm). Over 35 years of field experience based in Kanyakumari, Tamil Nadu, India.",
+      "telephone": "+91 94865 72584",
+      "email": "chinnathambicoirfibre2020@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chinnathambi Coir Fibre Processing Facility, Kanyakumari District",
+        "addressLocality": "Kanyakumari",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "629001",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 8.0883,
+        "longitude": 77.5385
+      },
+      "priceRange": "₹₹",
+      "currenciesAccepted": "INR, USD",
+      "paymentAccepted": "Bank Transfer, RTGS, NEFT, Cheque, Cash",
+      "areaServed": [
+        { "@type": "Country", "name": "India" },
+        { "@type": "AdministrativeArea", "name": "Tamil Nadu" },
+        { "@type": "AdministrativeArea", "name": "Kerala" },
+        { "@type": "AdministrativeArea", "name": "Karnataka" },
+        { "@type": "AdministrativeArea", "name": "Maharashtra" },
+        { "@type": "AdministrativeArea", "name": "Gujarat" },
+        { "@type": "AdministrativeArea", "name": "Andhra Pradesh" },
+        { "@type": "AdministrativeArea", "name": "Telangana" },
+        { "@type": "AdministrativeArea", "name": "Delhi" }
+      ],
+      "knowsAbout": [
+        "Coir Fibre Manufacturing",
+        "Fabric & Fibre Product Manufacturing",
+        "Natural Fibre Products",
+        "Dyed Black Bristle Fibre Processing",
+        "Industrial Brush Raw Material Production",
+        "Broom Raw Material Manufacturing",
+        "Coconut Husk Decortication",
+        "Manual Gunny Baling (52-56kg)"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Coir & Fibre Products Catalog",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Dyed Black Bristle Coir Fibre",
+            "itemListElement": [
+              {
+                "@type": "Product",
+                "name": "Dyed Black Bristle Coir Fibre (8\"-12\" / 200-300mm)",
+                "image": "https://chinnathambicoirfibre.com/assets/images/bristle-lenght.jpg",
+                "description": "Standard commercial length 8\" to 12\" (200-300mm) dyed black bristle coir fibre, double combed and hackled, packed in 52-56kg manual gunny bales for brush and broom manufacturing.",
+                "category": "Fibre Product Manufacturer",
+                "material": "100% Natural Coconut Bristle Fibre",
+                "brand": {
+                  "@type": "Brand",
+                  "name": "CCF"
+                },
+                "manufacturer": {
+                  "@id": "https://chinnathambicoirfibre.com/#organization"
+                },
+                "offers": {
+                  "@type": "AggregateOffer",
+                  "priceCurrency": "INR",
+                  "availability": "https://schema.org/InStock",
+                  "itemCondition": "https://schema.org/NewCondition"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://chinnathambicoirfibre.com/#website",
+      "url": "https://chinnathambicoirfibre.com",
+      "name": "Chinnathambi Coir Fibre (CCF)",
+      "publisher": {
+        "@id": "https://chinnathambicoirfibre.com/#organization"
+      },
+      "inLanguage": "en-IN"
+    }
+  ]
 };
 
 export default function RootLayout({
@@ -67,6 +224,12 @@ export default function RootLayout({
       lang="en"
       className={`${plusJakartaSans.variable} ${bricolageGrotesque.variable} scroll-smooth`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+        />
+      </head>
       <body className="min-h-screen flex flex-col bg-[#F5EBE1] text-[#22130C] font-sans antialiased selection:bg-caramel selection:text-white">
         <LightboxProvider>
           <Navbar />

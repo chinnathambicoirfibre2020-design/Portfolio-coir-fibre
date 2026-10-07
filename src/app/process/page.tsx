@@ -7,8 +7,20 @@ import AnatomySection from "@/components/AnatomySection";
 import FactoryGallery from "@/components/FactoryGallery";
 
 export const metadata: Metadata = {
-  title: "Manufacturing Journey & Factory Process | CCF",
-  description: "Learn how Chinnathambi Coir Fibre manufactures premium dyed black bristle coir in Kanyakumari. 35+ years experience, thermal vat dyeing, steel hackling, manual gunny baling.",
+  title: "Factory Manufacturing Process & Direct Processing Facility",
+  description: "Step-by-step manufacturing process of dyed black bristle coir fibre at CCF Kanyakumari. Raw husk curation, 95°C thermal vat dyeing, pin hackling, solar drying, and manual gunny baling.",
+  keywords: [
+    "Manufacturer",
+    "Fabric product manufacturer",
+    "Fibre product manufacturer",
+    "Coir manufacturing process",
+    "Thermal vat dyeing process coir",
+    "Bristle fibre hackling factory",
+    "Coir processing facility Tamil Nadu"
+  ],
+  alternates: {
+    canonical: "/process",
+  },
 };
 
 export default function ProcessPage() {
