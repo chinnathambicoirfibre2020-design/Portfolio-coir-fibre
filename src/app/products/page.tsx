@@ -6,14 +6,16 @@ import ProductShowcase from "@/components/ProductShowcase";
 import AnatomySection from "@/components/AnatomySection";
 
 export const metadata: Metadata = {
-  title: "Black Bristle Coir & Fibre Product Manufacturer (8\"-12\")",
-  description: "Direct Manufacturer of Standard Commercial 8\"-12\" (200-300mm) Dyed Black Bristle Coir Fibre. Combed natural fibre product, 52-56kg manual gunny bales for industrial brush and broom manufacturing.",
+  title: "Black Bristle Coir & Fibre Product Manufacturer & Exporter (8\"-12\")",
+  description: "Direct Manufacturer & Exporter of Standard Commercial 8\"-12\" (200-300mm) Dyed Black Bristle Coir Fibre. Combed natural fibre product, 52-56kg manual gunny bales for industrial brush and broom manufacturing.",
   keywords: [
     "Manufacturer",
+    "Exporter",
     "Fabric product manufacturer",
     "Fibre product manufacturer",
     "Black bristle coir manufacturer",
-    "Dyed coir fibre manufacturer",
+    "Black coir fibre exporter",
+    "Dyed coir fibre exporter",
     "Brush fibre product manufacturer",
     "Broom raw material factory",
     "8 to 12 inch coir fibre"

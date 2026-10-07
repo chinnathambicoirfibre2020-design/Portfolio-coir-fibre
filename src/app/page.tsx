@@ -11,18 +11,21 @@ import TransportCoverage from "@/components/TransportCoverage";
 import RfqSection from "@/components/RfqSection";
 
 export const metadata: Metadata = {
-  title: "Coir Fibre Manufacturer | Fabric & Fibre Product Manufacturer India | CCF",
-  description: "Direct Manufacturer & Factory Processor of Dyed Black Bristle Coir Fibre in 8\"-12\" (200-300mm) Standard Commercial Length. 35+ Years Experience, 52-56kg Manual Gunny Bales, Pan-India Dispatch.",
+  title: "Coir Fibre Manufacturer & Exporter | Natural Fibre Products India | CCF",
+  description: "Direct Manufacturer & Exporter of Dyed Black Bristle Coir Fibre in 8\"-12\" (200-300mm) Standard Commercial Length. 35+ Years Experience, 52-56kg Manual Gunny Bales, Pan-India & Global Supply.",
   keywords: [
     "Manufacturer",
+    "Exporter",
     "Fabric product manufacturer",
     "Fibre product manufacturer",
     "Coir fibre manufacturer",
+    "Coir fibre exporter",
     "Black coir fibre manufacturer",
+    "Black coir fibre exporter",
     "Bristle fibre manufacturer India",
     "Coir manufacturer Kanyakumari",
     "Brush raw material manufacturer",
-    "Broom fibre wholesale manufacturer"
+    "Broom fibre wholesale exporter"
   ],
   alternates: {
     canonical: "/",

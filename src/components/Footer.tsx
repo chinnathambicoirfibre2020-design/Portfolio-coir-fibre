@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs text-[#BCAAA4] leading-relaxed">
-              Manufacturer and wholesale supplier of pure dyed black coconut bristle fibre in Kanyakumari, Tamil Nadu. Over 35 years of hands-on coir trade mastery and direct factory processing unit.
+              Direct Manufacturer &amp; Exporter of pure dyed black coconut bristle fibre in Kanyakumari, Tamil Nadu. Over 35 years of hands-on coir trade mastery and modern direct factory processing unit.
             </p>
 
             <div className="flex items-center gap-2 text-xs font-semibold text-[#DF9B52]">
@@ -102,7 +102,7 @@ export default function Footer() {
                 <span className="text-[#DF9B52]">✓</span> &lt; 3% Dust &amp; Baby Hair Waste
               </li>
               <li className="flex items-center gap-1.5">
-                <Truck className="w-3.5 h-3.5 text-[#DF9B52]" /> Pan-India Direct Truck Transport
+                <Truck className="w-3.5 h-3.5 text-[#DF9B52]" /> Pan-India &amp; Global Export Dispatch
               </li>
             </ul>
           </div>
@@ -131,7 +131,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Clock className="w-4 h-4 text-[#DF9B52] flex-shrink-0" />
-                <span>Mon – Sat: 8:00 AM – 7:00 PM IST</span>
+                <span>Mon – Sat: 8:00 AM – 6:00 PM IST</span>
               </li>
             </ul>
           </div>
@@ -140,7 +140,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#826E60]">
           <p>© {new Date().getFullYear()} Chinnathambi Coir Fibre (CCF). All Rights Reserved.</p>
-          <p>Direct B2B Manufacturer &amp; Wholesale Supplier of Natural Coir Fibre in India.</p>
+          <p>Direct B2B Manufacturer, Exporter &amp; Wholesale Supplier of Natural Coir Fibre in India.</p>
         </div>
       </div>
     </footer>

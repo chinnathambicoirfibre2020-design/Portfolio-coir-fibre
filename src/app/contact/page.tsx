@@ -6,13 +6,15 @@ import RfqSection from "@/components/RfqSection";
 import TransportCoverage from "@/components/TransportCoverage";
 
 export const metadata: Metadata = {
-  title: "Contact Factory Sales | Direct Coir Fibre Manufacturer Wholesale Quotes",
-  description: "Contact Chinnathambi Coir Fibre sales desk for direct factory wholesale rates, bulk supply orders, sample hanks, and Pan-India freight dispatch for 8\"-12\" black bristle coir fibre.",
+  title: "Contact Factory Sales | Direct Coir Fibre Manufacturer & Exporter Quotes",
+  description: "Contact Chinnathambi Coir Fibre sales desk for direct factory wholesale rates, export inquiries, bulk supply orders, sample hanks, and freight dispatch for 8\"-12\" black bristle coir fibre.",
   keywords: [
     "Manufacturer",
+    "Exporter",
     "Fabric product manufacturer",
     "Fibre product manufacturer",
     "Coir manufacturer contact",
+    "Coir exporter contact India",
     "Wholesale coir fibre price quote",
     "Direct factory supplier contact India",
     "B2B coir fibre bulk order"

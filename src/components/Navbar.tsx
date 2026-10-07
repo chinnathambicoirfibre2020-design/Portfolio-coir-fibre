@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
           <div className="flex items-center gap-2">
             <span className="inline-flex items-center gap-1 font-semibold text-[#DF9B52]">
-              <ShieldCheck className="w-3.5 h-3.5 text-[#DF9B52]" /> Direct Kanyakumari Manufacturer
+              <ShieldCheck className="w-3.5 h-3.5 text-[#DF9B52]" /> Direct Kanyakumari Manufacturer &amp; Exporter
             </span>
             <span className="hidden md:inline text-neutral-500">•</span>
             <span className="hidden md:inline text-neutral-300">

@@ -6,16 +6,17 @@ import { ShieldCheck, Award, MapPin, Truck, CheckCircle2, Factory, Sun, Sparkles
 import StatsBar from "@/components/StatsBar";
 
 export const metadata: Metadata = {
-  title: "About CCF | 35+ Years Coir & Fibre Product Manufacturer",
-  description: "Learn about Chinnathambi Coir Fibre (CCF) - 35+ years of industry leadership and mastery in natural coir fibre processing, operating our state-of-the-art manufacturing unit in Kanyakumari, Tamil Nadu.",
+  title: "About CCF | 35+ Years Coir & Fibre Product Manufacturer & Exporter",
+  description: "Learn about Chinnathambi Coir Fibre (CCF) - 35+ years of industry leadership and mastery in natural coir fibre processing and global exporting, operating our state-of-the-art manufacturing unit in Kanyakumari, Tamil Nadu.",
   keywords: [
     "Manufacturer",
+    "Exporter",
     "Fabric product manufacturer",
     "Fibre product manufacturer",
     "Coir manufacturer background",
     "Chinnathambi Coir history",
     "Coir fibre factory Kanyakumari",
-    "South India natural fibre manufacturer"
+    "South India natural fibre manufacturer & exporter"
   ],
   alternates: {
     canonical: "/about",
